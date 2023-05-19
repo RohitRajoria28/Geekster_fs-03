@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+        var heading='Nested Function in React';
+        var array=['Rohit','Sohit','Anurag'];
+        var style={
+            backgroundColor:'green',
+            padding:'300',
+            color:'black',
+        }
+      function UI() {
+        return (
+          <div style={style} >
+            <h1> {heading}</h1>
+            <ul>
+                <li>{array[0]}</li>
+                <li>{array[1]}</li>
+                <li>{array[2]}</li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              laboriosam itaque repellat ea quibusdam, beatae eligendi ipsum
+              accusamus quaerat asperiores harum quos ipsa doloremque velit cum
+              consectetur expedita eius enim?
+            </p>
+          </div>
+        );
+      }
+      function reUse() {
+        return <div> {UI()} {UI()}</div>;
+      }
+      function App() {
+        ReactDOM.render(reUse(), document.getElementById("root"));
+      }
+      App();
+    </script>
+  </body>
+</html>

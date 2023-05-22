@@ -1,0 +1,29 @@
+.h2 {
+  margin: 0;
+}
+.nav {
+  background-color: rgb(141, 186, 155);
+  display: flex;
+  height: 60px;
+}
+a {
+  margin-right: 50px;
+}
+.title {
+  width: 40%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  margin-top: 30px;
+  margin-left: 390px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  color: rgb(18, 141, 100);
+}

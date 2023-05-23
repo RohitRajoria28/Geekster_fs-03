@@ -2,8 +2,7 @@ function Header(){
     return (
         <div>
             Welcome to React
-        </div>
-         
+        </div> 
     )
 } 
 
